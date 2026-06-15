@@ -14,8 +14,8 @@
   // Fallback: paint a static radial glow if Three.js or WebGL is unavailable.
   function fallback() {
     canvas.style.background =
-      'radial-gradient(60% 60% at 70% 35%, rgba(99,102,241,.30), transparent 60%),' +
-      'radial-gradient(50% 50% at 25% 70%, rgba(34,211,238,.18), transparent 60%)';
+      'radial-gradient(60% 60% at 70% 35%, rgba(37,99,235,.30), transparent 60%),' +
+      'radial-gradient(50% 50% at 25% 70%, rgba(34,211,238,.16), transparent 60%)';
   }
 
   if (typeof THREE === 'undefined' || reduce) { fallback(); return; }
@@ -58,7 +58,7 @@
   const COUNT = 1400;
   const positions = new Float32Array(COUNT * 3);
   const colors = new Float32Array(COUNT * 3);
-  const cA = new THREE.Color(0xa855f7);
+  const cA = new THREE.Color(0x2563eb);
   const cB = new THREE.Color(0x22d3ee);
   const tmp = new THREE.Color();
   const golden = Math.PI * (3 - Math.sqrt(5));
@@ -88,7 +88,7 @@
   /* --- faint wireframe shell --- */
   const shell = new THREE.LineSegments(
     new THREE.WireframeGeometry(new THREE.IcosahedronGeometry(R * 0.99, 2)),
-    new THREE.LineBasicMaterial({ color: 0x6366f1, transparent: true, opacity: 0.08 })
+    new THREE.LineBasicMaterial({ color: 0x2563eb, transparent: true, opacity: 0.09 })
   );
   group.add(shell);
 

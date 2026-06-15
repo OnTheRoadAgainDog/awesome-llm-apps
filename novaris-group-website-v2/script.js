@@ -72,46 +72,15 @@
     counters.forEach((el) => (el.textContent = el.dataset.count + (el.dataset.suffix || '')));
   }
 
-  /* --- desktop-only pointer effects --- */
+  /* --- desktop-only: subtle card tilt + glow-follow (kept restrained for a
+         professional feel; no custom cursor or magnetic gimmicks) --- */
   if (fine && !reduce) {
-    /* custom cursor */
-    const dot = document.getElementById('cursor');
-    const ring = document.getElementById('cursorRing');
-    let mx = innerWidth / 2, my = innerHeight / 2, rx = mx, ry = my;
-    window.addEventListener('pointermove', (e) => {
-      mx = e.clientX; my = e.clientY;
-      dot.style.transform = `translate(${mx}px, ${my}px) translate(-50%, -50%)`;
-    });
-    const ringLoop = () => {
-      rx += (mx - rx) * 0.18; ry += (my - ry) * 0.18;
-      ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
-      requestAnimationFrame(ringLoop);
-    };
-    ringLoop();
-    document.querySelectorAll('[data-cursor="hover"]').forEach((el) => {
-      el.addEventListener('pointerenter', () => ring.classList.add('hover'));
-      el.addEventListener('pointerleave', () => ring.classList.remove('hover'));
-    });
-
-    /* magnetic buttons */
-    document.querySelectorAll('[data-magnetic]').forEach((el) => {
-      const strength = 0.35;
-      el.addEventListener('pointermove', (e) => {
-        const r = el.getBoundingClientRect();
-        const x = e.clientX - r.left - r.width / 2;
-        const y = e.clientY - r.top - r.height / 2;
-        el.style.transform = `translate(${x * strength}px, ${y * strength}px)`;
-      });
-      el.addEventListener('pointerleave', () => { el.style.transform = ''; });
-    });
-
-    /* 3D tilt + glow-follow for cards */
     document.querySelectorAll('[data-tilt]').forEach((el) => {
       el.addEventListener('pointermove', (e) => {
         const r = el.getBoundingClientRect();
         const px = (e.clientX - r.left) / r.width;
         const py = (e.clientY - r.top) / r.height;
-        el.style.transform = `perspective(900px) rotateY(${(px - 0.5) * 8}deg) rotateX(${(0.5 - py) * 8}deg) translateY(-4px)`;
+        el.style.transform = `perspective(1100px) rotateY(${(px - 0.5) * 3.5}deg) rotateX(${(0.5 - py) * 3.5}deg) translateY(-3px)`;
         el.style.setProperty('--mx', px * 100 + '%');
         el.style.setProperty('--my', py * 100 + '%');
       });

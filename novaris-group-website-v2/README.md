@@ -37,8 +37,14 @@ python3 -m http.server 8000   # then open http://localhost:8000
 | Hero | static gradient + grid | **interactive 3D particle globe** with orbiting data arcs |
 | Motion | scroll reveals | reveals + **custom cursor, magnetic buttons, 3D tilt, marquee** |
 | Services | 3-col card grid | **bento grid** with mouse-follow glow |
-| Palette | cyan/indigo | **violet → indigo → cyan aurora** + film grain |
+| Palette | cyan/indigo | **corporate navy → blue → cyan** (restrained aurora) |
+| Sections | — | adds **engagement models**, **industries served**, certifications |
+| Motion | reveals | reveals + subtle 3D tilt globe (no custom cursor / magnetic) |
 | Type | Sora / Inter | **Space Grotesk** / Inter |
+
+> Tuned for a **professional IT-services** feel: enterprise navy/blue palette,
+> restrained motion, and the structure clients expect (engagement models,
+> industries, certifications, clear process).
 
 ## Customize
 - **Colors / fonts** — `:root` in `styles.css` (`--c1..--c4`, `--grad`).
