@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novaris Group — Global IT, Engineered in 3D</title>
+  <meta name="description" content="Novaris Group — Bulgaria-based IT consulting and consultant staffing, delivered worldwide. Infrastructure, cloud, security, software and AI, powered by 20+ years of enterprise experience." />
+  <meta name="theme-color" content="#060608" />
+  <meta property="og:title" content="Novaris Group — Global IT, Engineered" />
+  <meta property="og:description" content="Enterprise IT consulting & consultant staffing, worldwide." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- scroll progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- aurora backdrop -->
+  <div class="aurora" aria-hidden="true">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    <div class="grain"></div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="hdr" id="hdr">
+    <div class="wrap hdr-in">
+      <a href="#top" class="logo" data-magnetic data-cursor="hover">
+        <svg viewBox="0 0 32 32" width="30" height="30" fill="none" aria-hidden="true">
+          <path d="M16 2 4 9v14l12 7 12-7V9L16 2Z" stroke="url(#lg)" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M11 21V11l10 10V11" stroke="url(#lg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs><linearGradient id="lg" x1="4" y1="2" x2="28" y2="30">
+            <stop stop-color="#a855f7"/><stop offset=".5" stop-color="#6366f1"/><stop offset="1" stop-color="#22d3ee"/>
+          </linearGradient></defs>
+        </svg>
+        <span>Novaris<b>Group</b></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#services" data-cursor="hover">Services</a>
+        <a href="#why" data-cursor="hover">Why us</a>
+        <a href="#work" data-cursor="hover">Track record</a>
+        <a href="#founder" data-cursor="hover">Founder</a>
+        <a href="#contact" class="nav-pill" data-magnetic data-cursor="hover">Let's talk</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <canvas id="globe" class="globe-canvas" aria-hidden="true"></canvas>
+      <div class="wrap hero-in">
+        <p class="tag fx" data-fx><span class="dot"></span>Bulgaria · Operating worldwide</p>
+        <h1 class="hero-title">
+          <span class="line"><span class="w" data-fx>Global</span> <span class="w" data-fx>IT,</span></span>
+          <span class="line"><span class="w grad" data-fx>engineered</span></span>
+          <span class="line"><span class="w" data-fx>without</span> <span class="w" data-fx>borders.</span></span>
+        </h1>
+        <p class="hero-sub fx" data-fx>
+          Novaris Group delivers enterprise infrastructure, cloud, security, software and AI —
+          and places elite consultants inside the teams that need them. Two decades of proof,
+          one accountable partner.
+        </p>
+        <div class="hero-cta fx" data-fx>
+          <a href="#contact" class="btn btn-grad" data-magnetic data-cursor="hover">Start a project</a>
+          <a href="#services" class="btn btn-line" data-magnetic data-cursor="hover">See what we do</a>
+        </div>
+      </div>
+      <div class="scroll-hint fx" data-fx><span></span>Scroll</div>
+    </section>
+
+    <!-- ============ MARQUEE / TRUST ============ -->
+    <section class="marquee-wrap" aria-label="Experience earned at">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>European Commission</span><i>✦</i>
+          <span>Société Générale CIB</span><i>✦</i>
+          <span>Hydro-Québec</span><i>✦</i>
+          <span>Aéroports de Montréal</span><i>✦</i>
+          <span>Council of the EU</span><i>✦</i>
+          <span>European Commission</span><i>✦</i>
+          <span>Société Générale CIB</span><i>✦</i>
+          <span>Hydro-Québec</span><i>✦</i>
+          <span>Aéroports de Montréal</span><i>✦</i>
+          <span>Council of the EU</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="section stats-sec">
+      <div class="wrap stats">
+        <div class="stat fx" data-fx><strong data-count="20" data-suffix="+">0</strong><span>Years in enterprise IT</span></div>
+        <div class="stat fx" data-fx><strong data-count="30" data-suffix="K+">0</strong><span>Workstations migrated</span></div>
+        <div class="stat fx" data-fx><strong data-count="5" data-suffix="K+">0</strong><span>Users supported</span></div>
+        <div class="stat fx" data-fx><strong data-count="6" data-suffix="">0</strong><span>Service lines, one partner</span></div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES (BENTO) ============ -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <header class="sec-head fx" data-fx>
+          <p class="kicker">// What we do</p>
+          <h2>A full IT stack — <span class="grad">plus the people</span> to run it.</h2>
+        </header>
+
+        <div class="bento">
+          <article class="bento-card big fx" data-fx data-tilt data-cursor="hover">
+            <div class="bento-ico">👥</div>
+            <h3>IT Consulting &amp; Staffing</h3>
+            <p>Our core model. We source, vet and place IT consultants inside your organization — by project, role or full squad — so you get senior expertise without the hiring overhead.</p>
+            <ul><li>Consultant placement</li><li>Team augmentation</li><li>Fractional CTO &amp; advisory</li></ul>
+          </article>
+
+          <article class="bento-card fx" data-fx data-tilt data-cursor="hover">
+            <div class="bento-ico">🏛️</div>
+            <h3>Infrastructure &amp; Identity</h3>
+            <p>Active Directory, Windows Server, DNS, PKI, ADFS — designed, modernized and hardened for mission-critical environments.</p>
+          </article>
+
+          <article class="bento-card fx" data-fx data-tilt data-cursor="hover">
+            <div class="bento-ico">☁️</div>
+            <h3>Cloud &amp; DevOps</h3>
+            <p>Cloud migration, hybrid architecture, automation and CI/CD that keeps you shipping — scalable and cost-aware.</p>
+          </article>
+
+          <article class="bento-card fx" data-fx data-tilt data-cursor="hover">
+            <div class="bento-ico">🔒</div>
+            <h3>Cybersecurity</h3>
+            <p>Security hardening, legacy-risk remediation, strong auth/SSO and compliance for regulated, high-stakes orgs.</p>
+          </article>
+
+          <article class="bento-card wide fx" data-fx data-tilt data-cursor="hover">
+            <div class="bento-ico">🤖</div>
+            <h3>AI &amp; Automation</h3>
+            <p>We put modern AI to work — LLM apps, intelligent agents and workflow automation — to make your teams faster and your delivery leaner.</p>
+            <ul><li>AI integration</li><li>Process automation</li><li>AI-augmented delivery</li></ul>
+          </article>
+
+          <article class="bento-card fx" data-fx data-tilt data-cursor="hover">
+            <div class="bento-ico">💻</div>
+            <h3>Software &amp; Web</h3>
+            <p>Custom apps, APIs, internal tooling, and data-center / HPC infrastructure, built to enterprise standards.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY ============ -->
+    <section class="section" id="why">
+      <div class="wrap">
+        <header class="sec-head fx" data-fx>
+          <p class="kicker">// Why Novaris</p>
+          <h2>Senior expertise, <span class="grad">without the agency layer.</span></h2>
+        </header>
+        <div class="why-grid">
+          <div class="why-card fx" data-fx data-cursor="hover"><span>01</span><h3>Two decades on the front line</h3><p>20+ years across enterprise IT, consulting and founded ventures — hands-on, not theoretical.</p></div>
+          <div class="why-card fx" data-fx data-cursor="hover"><span>02</span><h3>Proven where it counts</h3><p>Delivered for EU institutions, investment banking and high-availability airport operations.</p></div>
+          <div class="why-card fx" data-fx data-cursor="hover"><span>03</span><h3>Global &amp; remote-ready</h3><p>HQ in Bulgaria, operating worldwide. Cross-border delivery is in our DNA.</p></div>
+          <div class="why-card fx" data-fx data-cursor="hover"><span>04</span><h3>AI-augmented</h3><p>Deep experience paired with modern AI tooling — faster, leaner, higher quality.</p></div>
+          <div class="why-card fx" data-fx data-cursor="hover"><span>05</span><h3>Certified &amp; rigorous</h3><p>Microsoft-certified, ITIL-aligned. Documentation and KPIs that pass enterprise scrutiny.</p></div>
+          <div class="why-card fx" data-fx data-cursor="hover"><span>06</span><h3>One partner, full stack</h3><p>Infrastructure, cloud, security, software, AI — and the consultants to staff it.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRACK RECORD ============ -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <header class="sec-head fx" data-fx>
+          <p class="kicker">// Track record</p>
+          <h2>Trusted where <span class="grad">the stakes are highest.</span></h2>
+        </header>
+        <div class="tl">
+          <div class="tl-row fx" data-fx data-cursor="hover"><span class="tl-when">2010–13 · Brussels</span><div><h3>European Commission</h3><p>Technical Team Lead on the DIGIT NOAP platform — large-scale, secure Windows 7 / Office migration across corporate and remote sites.</p></div></div>
+          <div class="tl-row fx" data-fx data-cursor="hover"><span class="tl-when">2015–22 · Montréal</span><div><h3>Société Générale CIB</h3><p>Senior Systems Engineer &amp; Team Lead — Active Directory &amp; identity, Tier 0/1/2 hardening, DR design. Winner of the <em>Grand Prix de l'Innovation</em> &amp; SG Americas Technical Lead Champion.</p></div></div>
+          <div class="tl-row fx" data-fx data-cursor="hover"><span class="tl-when">2014–15 · Montréal</span><div><h3>Hydro-Québec</h3><p>Packaging &amp; migration of 7,000+ applications across a 24,000-workstation XP→7 program.</p></div></div>
+          <div class="tl-row fx" data-fx data-cursor="hover"><span class="tl-when">2023–24 · Montréal</span><div><h3>Aéroports de Montréal</h3><p>Technical Analyst in a mission-critical, high-availability airport environment.</p></div></div>
+          <div class="tl-row fx" data-fx data-cursor="hover"><span class="tl-when">2018–now</span><div><h3>Founder &amp; CTO — Tech Ventures</h3><p>Co-founder/CTO of BlockBreakers (data center &amp; HPC) and founder of AK Hosting Solutions (blockchain infrastructure).</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOUNDER ============ -->
+    <section class="section" id="founder">
+      <div class="wrap founder">
+        <div class="founder-card fx" data-fx data-tilt data-cursor="hover">
+          <div class="mono">AP</div>
+          <div class="founder-badges"><span>MS Certified</span><span>ITIL v3</span><span>20+ yrs</span></div>
+        </div>
+        <div class="founder-body fx" data-fx>
+          <p class="kicker">// Founder</p>
+          <h2>Arnaud Piraprez</h2>
+          <p class="founder-role">Technical Analyst · Infrastructure &amp; Identity Specialist</p>
+          <p>Microsoft Certified <b>Windows Server Hybrid Administrator Associate</b> with 20+ years across enterprise IT, consulting and founded ventures — systems administration, Active Directory, desktop engineering, technical analysis and high-availability operations for EU institutions, global banking and critical infrastructure.</p>
+          <p>He founded Novaris Group to bring that senior-level rigor to organizations everywhere — and to connect great companies with the consultants who move them forward.</p>
+          <a href="https://www.linkedin.com/in/arnaudpiraprez/" class="btn btn-line" target="_blank" rel="noopener" data-magnetic data-cursor="hover">LinkedIn →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="wrap contact">
+        <div class="contact-copy fx" data-fx>
+          <p class="kicker">// Let's talk</p>
+          <h2>Need expertise — <span class="grad">or a consultant on your team?</span></h2>
+          <p>Tell us the goal. We'll come back with a clear, practical plan — a project, ongoing support, or the right person placed inside your org.</p>
+          <ul class="contact-list">
+            <li>📍 Bulgaria · Serving clients worldwide</li>
+            <li>✉️ <a href="mailto:arnaud@pinnovations.io" data-cursor="hover">arnaud@pinnovations.io</a></li>
+            <li>🔗 <a href="https://www.linkedin.com/in/arnaudpiraprez/" target="_blank" rel="noopener" data-cursor="hover">linkedin.com/in/arnaudpiraprez</a></li>
+          </ul>
+        </div>
+        <form class="contact-form fx" data-fx id="contactForm" novalidate>
+          <div class="f"><label for="name">Name</label><input id="name" name="name" type="text" required placeholder="Your name" data-cursor="hover" /></div>
+          <div class="f"><label for="email">Work email</label><input id="email" name="email" type="email" required placeholder="you@company.com" data-cursor="hover" /></div>
+          <div class="f f-full"><label for="need">What do you need?</label>
+            <select id="need" name="need" data-cursor="hover">
+              <option value="consulting">IT consulting / project</option>
+              <option value="staffing">Hire a consultant (staffing)</option>
+              <option value="cloud">Cloud &amp; DevOps</option>
+              <option value="security">Cybersecurity</option>
+              <option value="ai">AI &amp; automation</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="f f-full"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="A few lines about your project..." data-cursor="hover"></textarea></div>
+          <button type="submit" class="btn btn-grad btn-block" data-magnetic data-cursor="hover">Send message</button>
+          <p class="form-note" id="formNote" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="ftr">
+    <div class="wrap">
+      <div class="ftr-word">NOVARIS</div>
+      <div class="ftr-row">
+        <p>Global IT consulting &amp; talent — engineered worldwide.</p>
+        <nav><a href="#services" data-cursor="hover">Services</a><a href="#why" data-cursor="hover">Why us</a><a href="#work" data-cursor="hover">Track record</a><a href="#contact" data-cursor="hover">Contact</a></nav>
+      </div>
+      <div class="ftr-bottom"><span>© <span id="year"></span> Novaris Group</span><span>Bulgaria · Worldwide</span></div>
+    </div>
+  </footer>
+
+  <!-- Three.js (CDN) — loaded before the scene; scene.js degrades gracefully if unavailable -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="scene.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
